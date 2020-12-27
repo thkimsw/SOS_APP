@@ -5,32 +5,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FAF8F8"
+    android:backgroundTint="@android:color/holo_blue_light"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/distict"
-        android:layout_width="86dp"
-        android:layout_height="42dp"
-        android:text="불빛 끄기"
+        android:id="@+id/kakao"
+        android:layout_width="224dp"
+        android:layout_height="104dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@android:color/background_light"
+        android:text="카카오톡신고"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintTop_toBottomOf="@+id/emergency"
+        app:layout_constraintVertical_bias="0.723" />
 
     <Button
         android:id="@+id/emergency"
         android:layout_width="96dp"
         android:layout_height="94dp"
         android:background="@drawable/help"
-        android:text="긴급신고"
+        android:text="방범벨"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.761"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
+        app:layout_constraintVertical_bias="0.309" />
 
     <Button
         android:id="@+id/setting"
@@ -40,34 +47,73 @@
         android:text="설정"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="130dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@android:color/background_light"
+        android:text="호출"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
 
     <Switch
         android:id="@+id/c_state"
         android:layout_width="50dp"
         android:layout_height="27dp"
+        android:backgroundTint="@android:color/background_light"
+        android:buttonTint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.299"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.413" />
+        app:layout_constraintVertical_bias="0.392" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="116dp"
-        android:layout_height="25dp"
-        android:text="부모님 호출"
-        android:textAlignment="center"
-        android:textColor="#272424"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/c_state"
+    <Button
+        android:id="@+id/gps_btn"
+        android:layout_width="96dp"
+        android:layout_height="95dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@android:color/background_light"
+        android:text="위치전송"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintTop_toBottomOf="@+id/c_state"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="92dp"
+        android:layout_height="93dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@android:color/background_light"
+        android:text="긴급신고"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergency"
+        app:layout_constraintVertical_bias="0.25" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
