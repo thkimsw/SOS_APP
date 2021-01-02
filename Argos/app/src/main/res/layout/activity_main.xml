@@ -85,20 +85,20 @@
         app:layout_constraintVertical_bias="0.392" />
 
     <Button
-        android:id="@+id/gps_btn"
+        android:id="@+id/m_off"
         android:layout_width="96dp"
         android:layout_height="95dp"
         android:background="@drawable/button_border"
         android:backgroundTint="@android:color/background_light"
-        android:text="위치전송"
+        android:text="소리끄기"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintHorizontal_bias="0.736"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/c_state"
-        app:layout_constraintVertical_bias="0.225" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <Button
         android:id="@+id/submit"
@@ -111,9 +111,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emergency"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.227" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
